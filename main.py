@@ -45,7 +45,7 @@ def main():
 
 			for missle in shots:
 				if asteroid.collision_check(missle) == True:
-					asteroid.kill()
+					asteroid.split()
 					missle.kill()
 			
 		for thing in drawable:
